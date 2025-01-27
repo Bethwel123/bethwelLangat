@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Edeitor direcoties and files
 /config.js
+/.env
