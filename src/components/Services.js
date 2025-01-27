@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCode, FaServer, FaTools, FaLaptopCode, FaRocket, FaLock } from 'react-icons/fa';
-import { API_URL } from "../letConfig";
 
 
 const Services = () => {
@@ -10,7 +9,7 @@ const Services = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch(`${API_URL}/service`);
+        const response = await fetch('https://localhost/5000/service');
         const data = await response.json();
         setServices(data);
       } catch (error) {

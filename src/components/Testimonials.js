@@ -1,13 +1,12 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Carousel } from 'react-bootstrap';
-import { API_URL } from "../letConfig";
 
 const Testimonials = () => {
   const [testimonials, setTestimonials] = useState({});
 
   useEffect(() => {
     const fetchTestimonials = async () => {
-      const response = await fetch(`${API_URL}/testimonials`);
+      const response = await fetch('https://localhost/5000/testimonials');
       const data = await response.json();
       setTestimonials(data);
     };
