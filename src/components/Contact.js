@@ -2,14 +2,14 @@ import React, { useState, useEffect} from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import SECRET_KEY from '../config';
-// import data from '../db.json';
+import { API_URL } from "../letConfig";
 
 const Contact = () => {
   const [contactInfo, setContactInfo] = useState({});
 
   useEffect(() => {
     const fetchContactInfo = async () => {
-      const response = await fetch('http://localhost:5000/personalInfo');
+      const response = await fetch(`${API_URL}/personalInfo`);
       const data = await response.json();
       setContactInfo(data);
     };
