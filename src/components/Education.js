@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap } from 'react-icons/fa';
+import { API_URL } from "../letConfig";
 
 const Education = () => {
   const [education, setEducation ] = useState({});
@@ -8,7 +9,7 @@ const Education = () => {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await fetch('https://localhost/5000/education');
+        const response = await fetch(`${API_URL}/education`);
         const data = await response.json();
         setEducation(data);
       } catch (error) {

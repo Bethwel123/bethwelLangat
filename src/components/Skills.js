@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaCode, FaServer, FaDatabase, FaTools, FaStar, FaGit } from "react-icons/fa";
+import { API_URL } from "../letConfig";
 
 const Skills = () => {
   const [skills, setSkills] = useState({
@@ -15,7 +16,7 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await fetch('https://localhost/5000/skills');
+        const response = await fetch(`${API_URL}/skills`);
         const data = await response.json();
         setSkills(data);
       } catch (error) {

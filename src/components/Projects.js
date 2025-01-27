@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { API_URL } from "../letConfig";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -8,7 +9,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('https://localhost/5000/projects');
+        const response = await fetch(`${API_URL}/projects`);
         const data = await response.json();
         setProjects(data);
       } catch (error) {
