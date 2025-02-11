@@ -1,0 +1,222 @@
+{
+  "personalInfo": {
+    "name": "Bethwel Langat",
+    "title": "Full Stack Software Developer",
+    "email": "bethwellangat654@gmail.com",
+    "phone": "+254 719218481",
+    "location": "Nairobi, Kenya",
+    "bio": "Passionate full stack developer with expertise in modern web technologies. Creating elegant solutions to complex problems. Always eager to learn and grow in a fast-paced environment."
+  },
+  "services": [
+    {
+      "id": 1,
+      "icon": "FaCode",
+      "title": "Frontend Development",
+      "description": "Creating responsive React-based user interfaces",
+      "features": [
+        "React Single Page Applications",
+        "Component Development",
+        "State Management",
+        "Frontend Routing",
+        "React Hooks Implementation",
+        "Context API Usage"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "FaServer",
+      "title": "Backend Development",
+      "description": "Building Flask-powered backend services",
+      "features": [
+        "REST API Development with Flask",
+        "Basic Database Integration",
+        "Route Management",
+        "API Authentication",
+        "Flask Blueprints",
+        "Session Management"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "FaLaptopCode",
+      "title": "Web Development",
+      "description": "Full-stack development with React and Flask",
+      "features": [
+        "Frontend-Backend Integration",
+        "Version Control with Git",
+        "Basic Web Deployment",
+        "API Integration",
+        "Environment Setup",
+        "Development Workflow"
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "FaTools",
+      "title": "Development Tools",
+      "description": "Implementing essential development tools and practices",
+      "features": [
+        "Git Repository Management",
+        "Branch Strategy",
+        "Collaborative Development",
+        "Code Review Process",
+        "Merge Conflict Resolution",
+        "Version Tagging"
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "FaRocket",
+      "title": "Project Deployment",
+      "description": "Deploying web applications to production",
+      "features": [
+        "Heroku Deployment",
+        "Vercel Integration",
+        "Environment Configuration",
+        "Deployment Automation",
+        "Basic CI/CD Setup",
+        "Domain Setup"
+      ]
+    },
+    {
+      "id": 6,
+      "icon": "FaLock",
+      "title": "Security Implementation",
+      "description": "Basic security measures for web applications",
+      "features": [
+        "Flask Security Setup",
+        "React Form Validation",
+        "Authentication Flow",
+        "Protected Routes",
+        "CORS Configuration",
+        "Basic Security Headers"
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": ["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Redux"],
+    "backend": ["Node.js", "Flask", "Python", "Django", "RESTful APIs"],
+    "database": ["PostgreSQL", "MySQL", "SQLite"],
+    "tools": [
+      "Git",
+      "Docker",
+      "VS Code",
+      "Postman",
+      "Heroku",
+      "Vercel",
+      "Render"
+    ],
+    "softSkills": [
+      "Problem Solving",
+      "Teamwork",
+      "Communication",
+      "Time Management",
+      "Adaptability"
+    ],
+    "git": ["Git", "GitHub"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration",
+      "technologies": ["React", "Node.js", "Flask", "Stripe"],
+      "image": "https://imgs.search.brave.com/AmjyOqh1VuTZLISukjqV36IGhtivwLwxb75zISJEdTQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9lYXN5LXNob3Bw/aW5nLW9ubGluZS1j/b25jZXB0XzM2NzQz/LTI5MS5qcGc_c2Vt/dD1haXNfaHlicmlk",
+      "github": "https://github.com/johndoe/ecommerce",
+      "live": "https://ecommerce-demo.com"
+    },
+    {
+      "id": 2,
+      "title": "Task Management System",
+      "description": "Real-time task management application with team collaboration",
+      "technologies": ["React", "Firebase", "Bootstrap"],
+      "image": "https://imgs.search.brave.com/c6uq1WgqjUFKDNvq3dp5i_Rl-mPAYjxNAARz4F7HTSk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NTI4NzY0NC9waG90/by9wcm9qZWN0LW1h/bmFnZXItYW5hbHlz/dC13b3JraW5nLXdp/dGgtY29tcHV0ZXIt/aW4tbWFuYWdlbWVu/dC1zeXN0ZW0tdG8t/cHJvZ3Jlc3MtcGxh/bm5pbmctYW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/Nm9USjF0YjBIU2Rt/T3VKN0hmN0Z4NXAt/ZnNFTThXZE4zZ18w/eFI5U3dzPQ",
+      "github": "https://github.com/johndoe/taskmanager",
+      "live": "https://taskmanager-demo.com"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "KCS University",
+      "duration": "2019 - 2023",
+      "description": "Focused on software engineering principles and modern development practices.",
+      "achievements": [
+        "First Class Honours",
+        "Best Final Year Project Award",
+        "President of Computing Society"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Full Stack Web Development",
+      "institution": "Tech Academy Bootcamp",
+      "duration": "2023",
+      "description": "Intensive program covering modern web development technologies and practices.",
+      "achievements": [
+        "Built 5 full-stack applications",
+        "Awarded Best Team Project",
+        "Perfect attendance record"
+      ]
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Building a Simple Web Application Security Scanner with Python",
+      "category": "Development",
+      "readTime": "5 min read",
+      "excerpt": "Learn best practices for building large-scale React applications with optimal performance.",
+      "tags": ["Python", "Web Security", "Automation"],
+      "date": "2024-01-15",
+      "url": "https://www.freecodecamp.org/news/build-a-web-application-security-scanner-with-python/",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "id": 2,
+      "title": "Modern CSS Techniques",
+      "category": "Design",
+      "readTime": "4 min read",
+      "excerpt": "Exploring modern CSS features and techniques for better web design.",
+      "tags": ["CSS", "Design", "Web Development"],
+      "date": "2024-01-20",
+      "url": "https://web.dev/articles/one-line-layouts",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "id": 3,
+      "title": "Getting Started with Node.js",
+      "category": "Backend",
+      "readTime": "6 min read",
+      "excerpt": "A comprehensive guide to building backend services with Node.js.",
+      "tags": ["Node.js", "Backend", "JavaScript"],
+      "date": "2024-01-25",
+      "url": "https://nodejs.dev/en/learn/",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "role": "Project Manager at TechCorp",
+      "text": "Working with this developer was an excellent experience. They delivered high-quality code and met all deadlines.",
+      "image": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "role": "CEO at StartupX",
+      "text": "Outstanding technical skills and great communication. Would definitely work with them again.",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emma Davis",
+      "role": "Lead Developer at InnovateTech",
+      "text": "Their attention to detail and problem-solving abilities are impressive. A true professional.",
+      "image": "https://randomuser.me/api/portraits/women/3.jpg"
+    }
+  ]
+}
