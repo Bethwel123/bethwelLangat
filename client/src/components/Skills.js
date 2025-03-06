@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import {
   FaCode,
@@ -8,33 +8,32 @@ import {
   FaStar,
   FaGit,
 } from "react-icons/fa";
-import data from "./api/data"
 // import { API_URL } from "../letConfig";
 
 const Skills = () => {
-  const [skills, setSkills] = useState({
-    frontend: [],
-    backend: [],
-    database: [],
-    tools: [],
-    softSkills: [],
-    git: [],
-  });
+  const skills = {
+        "frontend": ["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Redux"],
+        "backend": ["Node.js", "Flask", "Python", "Django", "RESTful APIs"],
+        "database": ["PostgreSQL", "MySQL", "SQLite"],
+        "tools": [
+          "Git",
+          "Docker",
+          "VS Code",
+          "Postman",
+          "Heroku",
+          "Vercel",
+          "Render"
+        ],
+        "softSkills": [
+          "Problem Solving",
+          "Teamwork",
+          "Communication",
+          "Time Management",
+          "Adaptability"
+        ],
+        "git": ["Git", "GitHub"]
+      }
 
-  useEffect(() => {
-    const fetchSkills = async () => {
-      try {
-        // const response = await fetch(`http://localhost:5555/skills`);
-        // const data = await response.json();
-        // setSkills(data);
-        setSkills(data);
-      } catch (error) {
-        console.log("Error fetching skills:", error);
-      }
-    };
-
-    fetchSkills();
-  }, []);
 
   return (
     <section id="skills" className="skill-section">

@@ -1,26 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap } from 'react-icons/fa';
-import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Education = () => {
-  const [education, setEducation ] = useState({});
 
-  useEffect(() => {
-    const fetchEducation = async () => {
-      try {
-        // const response = await fetch(`http://localhost:5555/education`);
-        // const data = await response.json();
-        // setEducation(data);
-        setEducation(data);
-      } catch (error) {
-        console.log('Error fetching skills:', error);
-      }
-    };
-
-    fetchEducation();
-  }, []);
+  const education = [
+    {
+      "id": 1,
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "KCS University",
+      "duration": "2019 - 2023",
+      "description": "Focused on software engineering principles and modern development practices.",
+      "achievements": [
+        "First Class Honours",
+        "Best Final Year Project Award",
+        "President of Computing Society"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Full Stack Web Development",
+      "institution": "Tech Academy Bootcamp",
+      "duration": "2023",
+      "description": "Intensive program covering modern web development technologies and practices.",
+      "achievements": [
+        "Built 5 full-stack applications",
+        "Awarded Best Team Project",
+        "Perfect attendance record"
+      ]
+    }
+  ]
 
   return (
     <section id="education" className="section">

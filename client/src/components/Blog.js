@@ -1,48 +1,52 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
-import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      setLoading(true);
-      try {
-        // const response = await fetch(`http://localhost:5555/blog-posts`);
-        // const data = await response.json();
-        // console.log('Fetched data:', data);
-        // setPosts(data);
-        setPosts(data);
-      } catch (error) {
-        console.log('Error fetching blogs:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPosts();
-  }, []);
-
-  if (loading) {
-    return (
-      <section id="blog" className="section">
-        <Container className="text-center">
-          <h2>Loading...</h2>
-        </Container>
-      </section>
-    );
-  }
+  const blogPosts = [
+    {
+      "id": 1,
+      "title": "Building a Simple Web Application Security Scanner with Python",
+      "category": "Development",
+      "readTime": "5 min read",
+      "excerpt": "Learn best practices for building large-scale React applications with optimal performance.",
+      "tags": ["Python", "Web Security", "Automation"],
+      "date": "2024-01-15",
+      "url": "https://www.freecodecamp.org/news/build-a-web-application-security-scanner-with-python/",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "id": 2,
+      "title": "Modern CSS Techniques",
+      "category": "Design",
+      "readTime": "4 min read",
+      "excerpt": "Exploring modern CSS features and techniques for better web design.",
+      "tags": ["CSS", "Design", "Web Development"],
+      "date": "2024-01-20",
+      "url": "https://web.dev/articles/one-line-layouts",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    },
+    {
+      "id": 3,
+      "title": "Getting Started with Node.js",
+      "category": "Backend",
+      "readTime": "6 min read",
+      "excerpt": "A comprehensive guide to building backend services with Node.js.",
+      "tags": ["Node.js", "Backend", "JavaScript"],
+      "date": "2024-01-25",
+      "url": "https://nodejs.dev/en/learn/",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    }
+  ];
   
   return (
     <section id="blog" className="section">
       <Container>
         <h2 className="text-center mb-5 fw-bold">Recommended Picks</h2>
         <Row>
-          {posts.map((post) => (
+          {blogPosts.map((post) => (
             <Col lg={4} md={6} className="mb-4" key={post.id}>
               <Card className="blog-card h-100">
                 <Card.Img variant="top" src={post.image} className="blog-image" />

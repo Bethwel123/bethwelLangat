@@ -1,40 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import profile from "../images/profile.jpg";
-import data from "./api/data"
 // import { API_URL } from "../letConfig";
 
 const About = () => {
-  const [personalInfo, setPersonalInfo] = useState({});
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchPersonalInfo = async () => {
-      setLoading(false);
-      try {
-        // const response = await fetch({data});
-        // const data = await response.json();
-        // setPersonalInfo(data);
-        setPersonalInfo(data);
-      } catch (error) {
-        console.log('Error fetching personal info:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
+    const personalInfo = {
+      "name": "Bethwel Langat",
+      "title": "Full Stack Software Developer",
+      "email": "bethwellangat654@gmail.com",
+      "phone": "+254 719218481",
+      "location": "Nairobi, Kenya",
+      "bio": "Passionate full stack developer with expertise in modern web technologies. Creating elegant solutions to complex problems. Always eager to learn and grow in a fast-paced environment."
+    }
 
-    fetchPersonalInfo();
-  }, []);
-
-  if (loading) {
-    return (
-      <section id="about" className="section">
-        <Container className="text-center">
-          <h2>Loading...</h2>
-        </Container>
-      </section>
-    )
-  }
 
   return (
     <section id="about" className="section">

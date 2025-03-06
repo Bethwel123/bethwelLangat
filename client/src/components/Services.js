@@ -1,27 +1,97 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCode, FaServer, FaTools, FaLaptopCode, FaRocket, FaLock } from 'react-icons/fa';
-import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 
 const Services = () => {
-  const [services, setServices] = useState([]);
+  const services = [
+    {
+      "id": 1,
+      "icon": "FaCode",
+      "title": "Frontend Development",
+      "description": "Creating responsive React-based user interfaces",
+      "features": [
+        "React Single Page Applications",
+        "Component Development",
+        "State Management",
+        "Frontend Routing",
+        "React Hooks Implementation",
+        "Context API Usage"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "FaServer",
+      "title": "Backend Development",
+      "description": "Building Flask-powered backend services",
+      "features": [
+        "REST API Development with Flask",
+        "Basic Database Integration",
+        "Route Management",
+        "API Authentication",
+        "Flask Blueprints",
+        "Session Management"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "FaLaptopCode",
+      "title": "Web Development",
+      "description": "Full-stack development with React and Flask",
+      "features": [
+        "Frontend-Backend Integration",
+        "Version Control with Git",
+        "Basic Web Deployment",
+        "API Integration",
+        "Environment Setup",
+        "Development Workflow"
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "FaTools",
+      "title": "Development Tools",
+      "description": "Implementing essential development tools and practices",
+      "features": [
+        "Git Repository Management",
+        "Branch Strategy",
+        "Collaborative Development",
+        "Code Review Process",
+        "Merge Conflict Resolution",
+        "Version Tagging"
+      ]
+    },
+    {
+      "id": 5,
+      "icon": "FaRocket",
+      "title": "Project Deployment",
+      "description": "Deploying web applications to production",
+      "features": [
+        "Heroku Deployment",
+        "Vercel Integration",
+        "Environment Configuration",
+        "Deployment Automation",
+        "Basic CI/CD Setup",
+        "Domain Setup"
+      ]
+    },
+    {
+      "id": 6,
+      "icon": "FaLock",
+      "title": "Security Implementation",
+      "description": "Basic security measures for web applications",
+      "features": [
+        "Flask Security Setup",
+        "React Form Validation",
+        "Authentication Flow",
+        "Protected Routes",
+        "CORS Configuration",
+        "Basic Security Headers"
+      ]
+    }
+  ]
 
-  useEffect(() => {
-    const fetchServices = async () => {
-      try {
-        // const response = await fetch('http://localhost:5555/services');
-        // const data = await response.json();
-        // setServices(data);
-        setServices(data);
-      } catch (error) {
-        console.log('Error fetching skills:', error);
-      }
-    };
-
-    fetchServices();
-  }, []);
 
   const getIcon = (iconName) => {
     const icons = {

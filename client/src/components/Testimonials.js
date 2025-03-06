@@ -1,21 +1,41 @@
-import React, { useState, useEffect} from 'react';
+// import React, { useState, useEffect} from 'react';
 import { Container, Carousel } from 'react-bootstrap';
-import data from './api/data';
-// import { API_URL } from "../letConfig";
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState({});
+  // const [testimonials, setTestimonials] = useState({});
 
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      // const response = await fetch(`http://localhost:5555/testimonials`);
-      // const data = await response.json();
-      // setTestimonials(data);
-      setTestimonials(data);
-    };
+  const testimonials = [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "role": "Project Manager at TechCorp",
+      "text": "Working with this developer was an excellent experience. They delivered high-quality code and met all deadlines.",
+      "image": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "role": "CEO at StartupX",
+      "text": "Outstanding technical skills and great communication. Would definitely work with them again.",
+      "image": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Emma Davis",
+      "role": "Lead Developer at InnovateTech",
+      "text": "Their attention to detail and problem-solving abilities are impressive. A true professional.",
+      "image": "https://randomuser.me/api/portraits/women/3.jpg"
+    }
+  ]
+  // useEffect(() => {
+  //   const fetchTestimonials = async () => {
+  //     const response = await fetch(`http://localhost:5555/testimonials`);
+  //     const data = await response.json();
+  //     setTestimonials(data);
+  //   };
 
-    fetchTestimonials();
-  }, []);
+  //   fetchTestimonials();
+  // }, []);
 
 
   return (
