@@ -8,6 +8,7 @@ import {
   FaStar,
   FaGit,
 } from "react-icons/fa";
+import data from "./api/data"
 // import { API_URL } from "../letConfig";
 
 const Skills = () => {
@@ -23,8 +24,9 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await fetch(`http://localhost:5555/skills`);
-        const data = await response.json();
+        // const response = await fetch(`http://localhost:5555/skills`);
+        // const data = await response.json();
+        // setSkills(data);
         setSkills(data);
       } catch (error) {
         console.log("Error fetching skills:", error);

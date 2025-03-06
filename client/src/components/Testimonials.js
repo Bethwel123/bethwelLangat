@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Carousel } from 'react-bootstrap';
+import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Testimonials = () => {
@@ -7,8 +8,9 @@ const Testimonials = () => {
 
   useEffect(() => {
     const fetchTestimonials = async () => {
-      const response = await fetch(`http://localhost:5555/testimonials`);
-      const data = await response.json();
+      // const response = await fetch(`http://localhost:5555/testimonials`);
+      // const data = await response.json();
+      // setTestimonials(data);
       setTestimonials(data);
     };
 

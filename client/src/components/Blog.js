@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
+import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Blog = () => {
@@ -11,9 +12,10 @@ const Blog = () => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`http://localhost:5555/blog-posts`);
-        const data = await response.json();
-        console.log('Fetched data:', data);
+        // const response = await fetch(`http://localhost:5555/blog-posts`);
+        // const data = await response.json();
+        // console.log('Fetched data:', data);
+        // setPosts(data);
         setPosts(data);
       } catch (error) {
         console.log('Error fetching blogs:', error);

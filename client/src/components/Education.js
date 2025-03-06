@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaGraduationCap } from 'react-icons/fa';
+import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Education = () => {
@@ -9,8 +10,9 @@ const Education = () => {
   useEffect(() => {
     const fetchEducation = async () => {
       try {
-        const response = await fetch(`http://localhost:5555/education`);
-        const data = await response.json();
+        // const response = await fetch(`http://localhost:5555/education`);
+        // const data = await response.json();
+        // setEducation(data);
         setEducation(data);
       } catch (error) {
         console.log('Error fetching skills:', error);

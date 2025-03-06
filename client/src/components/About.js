@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import profile from "../images/profile.jpg";
+import data from "./api/data"
 // import { API_URL } from "../letConfig";
 
 const About = () => {
@@ -11,11 +12,14 @@ const About = () => {
     const fetchPersonalInfo = async () => {
       setLoading(false);
       try {
-        const response = await fetch(`http://localhost:5555/personalInfo`);
-        const data = await response.json();
+        // const response = await fetch({data});
+        // const data = await response.json();
+        // setPersonalInfo(data);
         setPersonalInfo(data);
       } catch (error) {
         console.log('Error fetching personal info:', error);
+      } finally {
+        setLoading(false);
       }
     };
 

@@ -9,7 +9,7 @@ const Contact = () => {
 
   useEffect(() => {
     const fetchContactInfo = async () => {
-      const response = await fetch(`http://localhost:5555/personalInfo`);
+      const response = await fetch(`data`);
       const data = await response.json();
       setContactInfo(data);
     };

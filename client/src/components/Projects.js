@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import data from './api/data';
 // import { API_URL } from "../letConfig";
 
 const Projects = () => {
@@ -9,8 +10,9 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch('http://localhost:5555/projects');
-        const data = await response.json();
+        // const response = await fetch('http://localhost:5555/projects');
+        // const data = await response.json();
+        // setProjects(data);
         setProjects(data);
       } catch (error) {
         console.log('Error fetching skills:', error);
