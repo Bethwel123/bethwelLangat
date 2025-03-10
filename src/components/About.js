@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import profile from "../images/profile.jpg";
-// import { API_URL } from "../letConfig";
 
 const About = () => {
 
@@ -57,6 +56,10 @@ const About = () => {
                   </li>{" "}
                   <li className="mb-2">
                     {" "}
+                    <strong>Phone:</strong> {personalInfo.phone}{" "}
+                  </li>{" "}
+                  <li className="mb-2">
+                    {" "}
                     <strong>Role:</strong> {personalInfo.title}{" "}
                   </li>{" "}
                 </ul>{" "}
@@ -64,7 +67,7 @@ const About = () => {
               <div className="d-flex gap-3">
                 {" "}
                 <a
-                  href="/resume.pdf"
+                  href={require("../Assets/Bethwel-Resume.pdf")}
                   className="btn btn-primary"
                   target="_blank"
                   rel="noopener noreferrer"
