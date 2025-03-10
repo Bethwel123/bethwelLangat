@@ -1,13 +1,13 @@
 {
-    "personalInfo": {
-      "name": "Bethwel Langat",
-      "title": "Full Stack Software Developer",
-      "email": "bethwellangat654@gmail.com",
-      "phone": "+254 719218481",
-      "location": "Nairobi, Kenya",
-      "bio": "Passionate full stack developer with expertise in modern web technologies. Creating elegant solutions to complex problems. Always eager to learn and grow in a fast-paced environment."
-    },
-    "services": [
+  "personalInfo": {
+    "name": "Bethwel Langat",
+    "title": "Full Stack Software Developer",
+    "email": "bethwellangat654@gmail.com",
+    "phone": "+254 719218481",
+    "location": "Nairobi, Kenya",
+    "bio": "Passionate full stack developer with expertise in modern web technologies. Creating elegant solutions to complex problems. Always eager to learn and grow in a fast-paced environment."
+  },
+  "services": [
     {
       "id": 1,
       "icon": "FaCode",
@@ -93,35 +93,49 @@
       ]
     }
   ],
-    "skills": {
-      "frontend": ["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Redux"],
-      "backend": ["Node.js", "Flask", "Python", "Django", "RESTful APIs"],
-      "database": ["PostgreSQL", "MySQL", "SQLite"],
-      "tools": ["Git", "Docker", "VS Code", "Postman", "Heroku", "Vercel", "Render"],
-      "softSkills": ["Problem Solving", "Teamwork", "Communication", "Time Management", "Adaptability"],
-      "git": ["Git", "GitHub"]
-    },
-    "projects": [
-      {
-        "id": 1,
-        "title": "E-commerce Platform",
-        "description": "Full-stack e-commerce solution with payment integration",
-        "technologies": ["React", "Node.js", "Flask", "Stripe"],
-        "image": "https://imgs.search.brave.com/AmjyOqh1VuTZLISukjqV36IGhtivwLwxb75zISJEdTQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9lYXN5LXNob3Bw/aW5nLW9ubGluZS1j/b25jZXB0XzM2NzQz/LTI5MS5qcGc_c2Vt/dD1haXNfaHlicmlk",
-        "github": "https://github.com/johndoe/ecommerce",
-        "live": "https://ecommerce-demo.com"
-      },
-      {
-        "id": 2,
-        "title": "Task Management System",
-        "description": "Real-time task management application with team collaboration",
-        "technologies": ["React", "Firebase", "Bootstrap"],
-        "image": "https://imgs.search.brave.com/c6uq1WgqjUFKDNvq3dp5i_Rl-mPAYjxNAARz4F7HTSk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NTI4NzY0NC9waG90/by9wcm9qZWN0LW1h/bmFnZXItYW5hbHlz/dC13b3JraW5nLXdp/dGgtY29tcHV0ZXIt/aW4tbWFuYWdlbWVu/dC1zeXN0ZW0tdG8t/cHJvZ3Jlc3MtcGxh/bm5pbmctYW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/Nm9USjF0YjBIU2Rt/T3VKN0hmN0Z4NXAt/ZnNFTThXZE4zZ18w/eFI5U3dzPQ",
-        "github": "https://github.com/johndoe/taskmanager",
-        "live": "https://taskmanager-demo.com"
-      }
+  "skills": {
+    "frontend": ["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Redux"],
+    "backend": ["Node.js", "Flask", "Python", "Django", "RESTful APIs"],
+    "database": ["PostgreSQL", "MySQL", "SQLite"],
+    "tools": [
+      "Git",
+      "Docker",
+      "VS Code",
+      "Postman",
+      "Heroku",
+      "Vercel",
+      "Render"
     ],
-    "education": [
+    "softSkills": [
+      "Problem Solving",
+      "Teamwork",
+      "Communication",
+      "Time Management",
+      "Adaptability"
+    ],
+    "git": ["Git", "GitHub"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration",
+      "technologies": ["React", "Node.js", "Flask", "Stripe"],
+      "image": "https://imgs.search.brave.com/AmjyOqh1VuTZLISukjqV36IGhtivwLwxb75zISJEdTQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9lYXN5LXNob3Bw/aW5nLW9ubGluZS1j/b25jZXB0XzM2NzQz/LTI5MS5qcGc_c2Vt/dD1haXNfaHlicmlk",
+      "github": "https://github.com/johndoe/ecommerce",
+      "live": "https://ecommerce-demo.com"
+    },
+    {
+      "id": 2,
+      "title": "Task Management System",
+      "description": "Real-time task management application with team collaboration",
+      "technologies": ["React", "Firebase", "Bootstrap"],
+      "image": "https://imgs.search.brave.com/c6uq1WgqjUFKDNvq3dp5i_Rl-mPAYjxNAARz4F7HTSk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NTI4NzY0NC9waG90/by9wcm9qZWN0LW1h/bmFnZXItYW5hbHlz/dC13b3JraW5nLXdp/dGgtY29tcHV0ZXIt/aW4tbWFuYWdlbWVu/dC1zeXN0ZW0tdG8t/cHJvZ3Jlc3MtcGxh/bm5pbmctYW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/Nm9USjF0YjBIU2Rt/T3VKN0hmN0Z4NXAt/ZnNFTThXZE4zZ18w/eFI5U3dzPQ",
+      "github": "https://github.com/johndoe/taskmanager",
+      "live": "https://taskmanager-demo.com"
+    }
+  ],
+  "education": [
     {
       "id": 1,
       "degree": "Bachelor of Science in Computer Science",
@@ -147,7 +161,7 @@
       ]
     }
   ],
-    "blogPosts": [
+  "blogPosts": [
     {
       "id": 1,
       "title": "Building a Simple Web Application Security Scanner with Python",
@@ -205,4 +219,4 @@
       "image": "https://randomuser.me/api/portraits/women/3.jpg"
     }
   ]
-  }  
+}
