@@ -25,3 +25,4 @@ yarn-error.log*
 # Edeitor direcoties and files
 /config.js
 .vercel
+/Assets

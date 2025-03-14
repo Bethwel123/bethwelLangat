@@ -21,8 +21,8 @@ const Projects = () => {
       "description": "Real-time task management application with team collaboration",
       "technologies": ["React", "Firebase", "Bootstrap"],
       "image": "https://imgs.search.brave.com/c6uq1WgqjUFKDNvq3dp5i_Rl-mPAYjxNAARz4F7HTSk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NTI4NzY0NC9waG90/by9wcm9qZWN0LW1h/bmFnZXItYW5hbHlz/dC13b3JraW5nLXdp/dGgtY29tcHV0ZXIt/aW4tbWFuYWdlbWVu/dC1zeXN0ZW0tdG8t/cHJvZ3Jlc3MtcGxh/bm5pbmctYW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1V/Nm9USjF0YjBIU2Rt/T3VKN0hmN0Z4NXAt/ZnNFTThXZE4zZ18w/eFI5U3dzPQ",
-      "github": "https://github.com/johndoe/taskmanager",
-      "live": "https://taskmanager-demo.com"
+      "github": "https://github.com/Bethwel123/Task-Management-system",
+      "live": "https://task-management-system-1-u7ti.onrender.com"
     }
   ]
 
