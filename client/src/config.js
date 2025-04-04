@@ -1,3 +1,4 @@
-const SECRET_KEY = "a3422565-c685-4d5d-ac3b-1a8b14d79d86";
+const SECRET_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+console.log("Secret Key: ", SECRET_KEY);
 
 export default SECRET_KEY;
