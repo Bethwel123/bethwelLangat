@@ -12,7 +12,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 
 ## Technologies Used
 - Frontend: React.js, Bootstrap 5, React-Bootstrap
-- Styling: CSS3, Bootstrap custom theming
+- Styling: CSS, Bootstrap custom theming
 - Icons: React-Icons
 Navigation: React-Scroll for smooth page navigation
 - Form Handling: Form validation and submission via Web3Forms API
